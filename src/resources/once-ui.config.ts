@@ -14,14 +14,14 @@ import {
 import { home } from "./index";
 
 // IMPORTANT: Replace with your own domain address - it's used for SEO in meta tags and schema
-const baseURL: string = "https://demo.magic-portfolio.com";
+const baseURL: string = "https://priyanshubellum.in";
 
 const routes: RoutesConfig = {
   "/": true,
   "/about": true,
   "/work": true,
   "/blog": true,
-  "/gallery": true,
+  "/gallery": false,
 };
 
 const display: DisplayConfig = {
@@ -195,9 +195,9 @@ const schema: SchemaConfig = {
 
 // social links
 const sameAs: SameAsConfig = {
-  threads: "https://www.threads.com/@once_ui",
-  linkedin: "https://www.linkedin.com/company/once-ui/",
-  discord: "https://discord.com/invite/5EyAQ4eNdS",
+  threads: "https://www.threads.com/@priyanshu.bellum",
+  linkedin: "https://www.linkedin.com/in/priyanshu-singh-1197a81b5",
+  discord: "https://discord.com",
 };
 
 // social sharing configuration for blog posts

@@ -2,19 +2,19 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
+  firstName: "Priyanshu",
+  lastName: "Singh",
+  name: `Priyanshu Singh`,
+  role: "Co Founder at AZMTH | AZMTH Labs | CapitalFi | Tech Lead at EZRM",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "priyanshu@azmth.com",
+  location: "Asia/Kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Hindi"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
-  display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  display: false,
+  title: <>Subscribe to {person.firstName}&rsquo;s Newsletter</>,
   description: <>My weekly newsletter about creativity and engineering</>,
 };
 
@@ -31,19 +31,19 @@ const social: Social = [
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/priyanshu-singh-1197a81b5",
     essential: true,
   },
   {
     name: "Instagram",
     icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
+    link: "https://www.instagram.com/priyanshu.bellum/",
     essential: false,
   },
   {
     name: "Threads",
     icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.threads.com/@priyanshu.bellum",
     essential: true,
   },
   {
@@ -60,31 +60,32 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Building bridges between across teams</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">AZMTH</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
           Featured work
         </Text>
       </Row>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work/building-azmth",
   },
   subline: (
     <>
-    I'm Selene, a design engineer at <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
-</>
+      I&rsquo;m Priyanshu, a Co Founder at AZMTH | AZMTH Labs | CapitalFi | Tech Lead at EZRM <br />
+      I help teams build better products by bridging the gap between design and technology.
+    </>
   ),
 };
 
 const about: About = {
   path: "/about",
   label: "About",
-  title: `About – ${person.name}`,
+  title: `About - ${person.name}`,
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
     display: true,
@@ -102,9 +103,9 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Priyanshu is a Kolkata-based co founder with a passion for transforming complex challenges
+        into simple, elegant solutions. His work spans digital interfaces, interactive
+        experiences, and the convergence of information and technology.
       </>
     ),
   },
@@ -113,16 +114,16 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "AZMTH",
+        timeframe: "2023 - Present",
+        role: "Co Founder ",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Redesigned the Team structure for the AZMTH platform, resulting in a 20% increase in user
+            engagement and 30% faster collaboration.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
+            Spearheaded the integration of AI tools into workflows, enabling teams to
             iterate 50% faster.
           </>,
         ],
@@ -130,19 +131,19 @@ const about: About = {
           // optional: leave the array empty if you don't want to display images
           {
             src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            alt: "AZMTH Project",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "AZMTH Labs",
+        timeframe: "2023 - Present",
+        role: "Co Founder | CEO",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
+            Developed a collaboration system that unified the brand across multiple platforms, improving
             design consistency by 40%.
           </>,
           <>
@@ -159,12 +160,8 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
+        name: "KASHI INSTITUTE OF TECHNOLOGY",
         description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
       },
     ],
   },
